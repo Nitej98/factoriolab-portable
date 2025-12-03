@@ -1,0 +1,142 @@
+.sidebar {
+  position: fixed;
+  top: 32px;
+  left: -240px;
+  width: 240px;
+  height: calc(100vh - 32px);
+  background-color: #222;
+  /* background-color: rgba(34, 34, 34, 0.7); */
+  /* backdrop-filter: blur(10px);     */
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1100;
+  overflow-y: auto;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* Hide scrollbar */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  scrollbar-width: none;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-resize-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  cursor: ew-resize;
+  background-color: transparent;
+  z-index: 1101;
+}
+
+/* Overlay to close sidebar */
+.sidebar-overlay {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1050;
+}
+
+/* Tab list styles */
+.tab-list {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.tab-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-title {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.tab-item,
+.add-tab-button {
+  width: 95%;
+  margin: 0 auto 8px auto;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #2f2f2f;
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tab-item:hover,
+.add-tab-button:hover {
+  background-color: #444;
+}
+
+.tab-item.active {
+  background-color: #555;
+  font-weight: bold;
+}
+
+.tab-close-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.tab-close-icon img {
+  width: 14px;
+  height: 14px;
+  filter: invert(100%);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.tab-close-icon:hover img {
+  opacity: 1;
+}
+
+/* Add tab icon centered */
+.add-tab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-tab-button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+/* Prevent dragging */
+.sidebar * {
+  -webkit-app-region: no-drag;
+}

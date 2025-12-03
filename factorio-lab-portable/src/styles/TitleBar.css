@@ -1,0 +1,126 @@
+.titlebar {
+  height: 32px;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  -webkit-app-region: drag;
+}
+
+.titlebar-left {
+  display: flex;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.titlebar-title {
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+.titlebar-buttons {
+  display: flex;
+  gap: 4px;
+  -webkit-app-region: no-drag;
+}
+
+.titlebar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 32px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.titlebar-button img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.titlebar-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.titlebar-button.close:hover {
+  background-color: #e81123;
+}
+
+.titlebar-app-icon {
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  -webkit-app-region: no-drag;
+  margin-top: 1px;
+}
+
+.sidebar-toggle-button {
+  width: 32px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-toggle-button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+/* Prevent dragging  */
+
+.titlebar-buttons,
+.titlebar-app-icon,
+.titlebar-dropdown,
+.sidebar-toggle-button {
+  -webkit-app-region: no-drag;
+}
+
+/*settings button styles*/
+.settings-button {
+  position: relative;
+}
+
+.settings-button::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  transition: opacity 0.18s ease-out, transform 0.18s ease-out;
+  pointer-events: none;
+}
+
+.settings-button:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.titlebar-buttons .settings-button:hover,
+.titlebar-button.settings-button:hover {
+  background-color: transparent !important;
+}

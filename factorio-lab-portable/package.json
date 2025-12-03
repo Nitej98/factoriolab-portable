@@ -1,0 +1,101 @@
+{
+  "name": "factorio-lab-portable",
+  "version": "1.0.0",
+  "author": "Nitej",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nitej98/factoriolab-portable.git"
+  },
+  "license": "MIT",
+  "main": "electron-build/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run build-electron\" \"npm run start-react\" \"npm run start-electron\"",
+    "start-react": "cross-env BROWSER=none react-scripts start",
+    "start-electron": "wait-on http://localhost:3000 && electron .",
+    "build": "node .\\electron\\dataObjectHelper.js && node .\\electron\\filePathHelper.js && cross-env PUBLIC_URL=. react-scripts build",
+    "build-electron": "tsc -p tsconfig.electron.json",
+    "package": "npm run build && npm run build-electron",
+    "electron": "electron .",
+    "dist": "npm run build && npm run build-electron && electron-builder"
+  },
+  "build": {
+    "appId": "com.factoriolab.portable",
+    "productName": "Factoriolab Portable",
+    "directories": {
+      "buildResources": "public/assets/icons",
+      "output": "release"
+    },
+    "files": [
+      "build/**/*",
+      "electron-build/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "icon": "win_icon.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "mac_icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "linux_icon.png"
+    },
+    "extraMetadata": {
+      "main": "electron-build/main.js"
+    }
+  },
+  "dependencies": {
+    "@hello-pangea/dnd": "^18.0.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "electron-updater": "^6.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "concurrently": "^9.2.0",
+    "cross-env": "^7.0.3",
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12",
+    "typescript": "^4.9.5",
+    "wait-on": "^8.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
