@@ -2,6 +2,8 @@
 
    A desktop version of Factoriolab
 
+   ![image1](.github/.images/factoriolab-portable-1.png)
+   ![image3](.github/.images/factoriolab-portable-3.png)
 
    A desktop-ready, multi-tab version of Factoriolab.
    factoriolab-portable packages the full web version of Factoriolab into a native desktop environment.
@@ -14,11 +16,15 @@
 
    Open multiple Factoriolab instances at once — each isolated in its own tab.
    Tabs display the relevant icon and recipe name for easier navigation.
+   
+   ![image2](.github/.images/factoriolab-portable-2.png)
 
 ## Saved Workspace
 
    Every time you start the app, it restores all previously open tabs and settings exactly as you left them.
    
+   ![image4](.github/.images/factoriolab-portable-4.png)
+
 ## Lightweight
 
    Uses significantly fewer system resources than running Factoriolab in a web browser.
