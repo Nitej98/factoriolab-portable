@@ -1,6 +1,16 @@
+.custom-dialog {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.45);
+}
+
 .dialog-panel {
   background: #2a2a2a;
-  padding: 24px;
+  padding: 0px 24px 12px;
   border-radius: 10px;
   width: 360px;
   color: #fff;

@@ -6,6 +6,15 @@ const { protocol } = require("electron");
 const { customProtocolHandler } = require("./custom_protocol_handler");
 const { autoUpdater } = require("electron-updater");
 
+// enable packaged mode for testing
+// if (!app.isPackaged) {
+//   Object.defineProperty(app, "isPackaged", {
+//     get() {
+//       return true;
+//     },
+//   });
+// }
+
 const saveFileName = app.isPackaged ? "tabs_data.json" : "tabs_data_dev.json";
 const settingsFileName = app.isPackaged ? "settings.json" : "settings_dev.json";
 const tabsFile = path.join(app.getPath("userData"), saveFileName);
@@ -56,6 +65,8 @@ function createWindow() {
     ? `file://${path.join(__dirname, "../build/index.html")}`
     : "http://localhost:3000";
 
+  // const startUrl = "http://localhost:3000";
+
   // const startUrl = `file://${path.join(__dirname, "../build/index.html")}`;
 
   mainWindow.loadURL(startUrl);
@@ -65,7 +76,7 @@ function createWindow() {
 
   // Disable keyboard shortcuts
   if (app.isPackaged) {
-    // disable shortcut when react in focus
+    // disable shortcuts when react in focus
     mainWindow.webContents.on("before-input-event", (event, input) => {
       blockShortcuts(event, input);
     });
