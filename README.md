@@ -46,7 +46,7 @@
 
     git clone https://github.com/Nitej98/factoriolab-portable.git
 
-    cd factoriolab-portable/factorio-lab-electron
+    cd factoriolab-portable/factorio-lab-portable
 
 ## 2. Install dependencies
 
@@ -62,7 +62,7 @@
 
     git clone https://github.com/Nitej98/factoriolab-portable.git
 
-    cd factoriolab-portable
+    cd factoriolab-portable/factorio-lab-portable
 
 ## 2. Install dependencies
 
