@@ -65,19 +65,28 @@ function createWindow() {
 
   // Disable keyboard shortcuts
   if (app.isPackaged) {
+    // disable shortcut when react in focus
     mainWindow.webContents.on("before-input-event", (event, input) => {
-      const isReload = input.key.toLowerCase() === "r" && input.control;
-
-      const isDevTools =
-        input.key.toLowerCase() === "i" && input.control && input.shift;
-
-      const close = input.key.toLowerCase() === "w" && input.control;
-
-      if (isReload || isDevTools || close) {
-        event.preventDefault();
+      blockShortcuts(event, input);
+    });
+    // disable shortcuts when webview in focus
+    app.on("web-contents-created", (event, contents) => {
+      if (contents.getType() === "webview") {
+        contents.on("before-input-event", (event, input) => {
+          blockShortcuts(event, input);
+        });
       }
     });
   }
+  const blockShortcuts = (event, input) => {
+    const isReload = input.key.toLowerCase() === "r" && input.control;
+    const isDevTools =
+      input.key.toLowerCase() === "i" && input.control && input.shift;
+    const close = input.key.toLowerCase() === "w" && input.control;
+    if (isReload || isDevTools || close) {
+      event.preventDefault();
+    }
+  };
 
   // open social links in external browser
   app.on("web-contents-created", (event, contents) => {
