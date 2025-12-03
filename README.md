@@ -6,9 +6,9 @@
    A desktop-ready, multi-tab version of Factoriolab.
    factoriolab-portable packages the full web version of Factoriolab into a native desktop environment.
 
-## Native Desktop Application
+## Offline Desktop Application
 
-   Runs the full Factoriolab UI inside an Electron-powered container, enabling native behaviors like file persistence.
+   This runs the full Factoriolab UI inside an Electron-powered container, enabling full offline usage and data persistence.
 
 ## Multi-Tab Support
 
@@ -37,7 +37,7 @@
 
 
 
-### Submit bugs and suggestions on the [Issues page](https://github.com/Nitej98/factoriolab-portable/issues) or in our [Discord](https://discord.gg/VMGT4atC)
+### Submit bugs and suggestions on the [Issues page](https://github.com/Nitej98/factoriolab-portable/issues) or in our [Discord](https://discord.gg/mn2yYtGR4z)
 ### If you like this app, consider supporting on [Ko-fi](https://ko-fi.com/nitej)
 
 #  Running Locally (Development)

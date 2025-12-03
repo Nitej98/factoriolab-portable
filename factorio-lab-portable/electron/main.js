@@ -102,7 +102,7 @@ function createWindow() {
           shell.openExternal(
             {
               "github.com": "https://github.com/Nitej98/factoriolab-portable",
-              "discord.gg": "https://discord.gg/VMGT4atC",
+              "discord.gg": "https://discord.gg/mn2yYtGR4z",
               "ko-fi.com": "https://ko-fi.com/nitej",
             }[url.hostname]
           );
