@@ -5,6 +5,7 @@ const FactoriolabExactMap = {
   "assets/glpk-wasm/glpk.all.wasm": "assets/glpk-wasm/glpk.all.wasm",
   "assets/i18n/de.json": "assets/i18n/de.json",
   "assets/i18n/en.json": "assets/i18n/en.json",
+  "assets/i18n/es.json": "assets/i18n/es.json",
   "assets/i18n/fr.json": "assets/i18n/fr.json",
   "assets/i18n/ja.json": "assets/i18n/ja.json",
   "assets/i18n/pt-BR.json": "assets/i18n/pt-BR.json",
@@ -12,52 +13,52 @@ const FactoriolabExactMap = {
   "assets/i18n/zh.json": "assets/i18n/zh.json",
   "assets/release.json": "assets/release.json",
   "browserconfig.xml": "browserconfig.xml",
-  "chunk-2AVW7DB3.js": "chunk-2AVW7DB3.js",
-  "chunk-2BWTQID7.js": "chunk-2BWTQID7.js",
-  "chunk-2CHC5TDY.js": "chunk-2CHC5TDY.js",
-  "chunk-3ZUIUQLF.js": "chunk-3ZUIUQLF.js",
-  "chunk-4PD5MZCY.js": "chunk-4PD5MZCY.js",
-  "chunk-4U2WODWG.js": "chunk-4U2WODWG.js",
-  "chunk-5UPUBLOK.js": "chunk-5UPUBLOK.js",
-  "chunk-6AWNVDLB.js": "chunk-6AWNVDLB.js",
-  "chunk-7JNB2KK6.js": "chunk-7JNB2KK6.js",
-  "chunk-A2K4VUSU.js": "chunk-A2K4VUSU.js",
-  "chunk-DIOVXBYG.js": "chunk-DIOVXBYG.js",
-  "chunk-EJZC5EDN.js": "chunk-EJZC5EDN.js",
-  "chunk-FJS5QXPZ.js": "chunk-FJS5QXPZ.js",
-  "chunk-G25KGWRW.js": "chunk-G25KGWRW.js",
-  "chunk-G6DUOGHR.js": "chunk-G6DUOGHR.js",
-  "chunk-GQJRDAXM.js": "chunk-GQJRDAXM.js",
-  "chunk-HCAWMO73.js": "chunk-HCAWMO73.js",
-  "chunk-I7XPYAIR.js": "chunk-I7XPYAIR.js",
-  "chunk-IHEJGUMY.js": "chunk-IHEJGUMY.js",
-  "chunk-IJKAZFOW.js": "chunk-IJKAZFOW.js",
-  "chunk-JATLREWG.js": "chunk-JATLREWG.js",
-  "chunk-JTSDALRM.js": "chunk-JTSDALRM.js",
-  "chunk-KEJTOO3O.js": "chunk-KEJTOO3O.js",
-  "chunk-LVF3FVUV.js": "chunk-LVF3FVUV.js",
-  "chunk-N6SCJFZW.js": "chunk-N6SCJFZW.js",
-  "chunk-NBPUI3EW.js": "chunk-NBPUI3EW.js",
-  "chunk-O4Z62S43.js": "chunk-O4Z62S43.js",
-  "chunk-P2ZPFYZT.js": "chunk-P2ZPFYZT.js",
-  "chunk-P5QM2LGB.js": "chunk-P5QM2LGB.js",
-  "chunk-PPPK4UZV.js": "chunk-PPPK4UZV.js",
-  "chunk-QIN73SLB.js": "chunk-QIN73SLB.js",
-  "chunk-RFSNV6CF.js": "chunk-RFSNV6CF.js",
-  "chunk-SE62O2O6.js": "chunk-SE62O2O6.js",
-  "chunk-SG2AWOYC.js": "chunk-SG2AWOYC.js",
-  "chunk-SKJBBAJH.js": "chunk-SKJBBAJH.js",
-  "chunk-SSL7IGZO.js": "chunk-SSL7IGZO.js",
-  "chunk-TSCDR4AP.js": "chunk-TSCDR4AP.js",
+  "chunk-2TEAITZV.js": "chunk-2TEAITZV.js",
+  "chunk-3KP23RO2.js": "chunk-3KP23RO2.js",
+  "chunk-3RG4TA4A.js": "chunk-3RG4TA4A.js",
+  "chunk-566TU5EW.js": "chunk-566TU5EW.js",
+  "chunk-56AGMPL6.js": "chunk-56AGMPL6.js",
+  "chunk-5HUK2CK4.js": "chunk-5HUK2CK4.js",
+  "chunk-6AA6F6KU.js": "chunk-6AA6F6KU.js",
+  "chunk-6BGK3QDP.js": "chunk-6BGK3QDP.js",
+  "chunk-6E6NVBAQ.js": "chunk-6E6NVBAQ.js",
+  "chunk-7BJO47CB.js": "chunk-7BJO47CB.js",
+  "chunk-ABPFJOIE.js": "chunk-ABPFJOIE.js",
+  "chunk-B5MNMUXE.js": "chunk-B5MNMUXE.js",
+  "chunk-BZRSHDAE.js": "chunk-BZRSHDAE.js",
+  "chunk-CAIGWISA.js": "chunk-CAIGWISA.js",
+  "chunk-EDTYS66H.js": "chunk-EDTYS66H.js",
+  "chunk-EGRKDG7D.js": "chunk-EGRKDG7D.js",
+  "chunk-FDK7VW5G.js": "chunk-FDK7VW5G.js",
+  "chunk-FJ7LSHCI.js": "chunk-FJ7LSHCI.js",
+  "chunk-FWXHGAVU.js": "chunk-FWXHGAVU.js",
+  "chunk-GAFADBS6.js": "chunk-GAFADBS6.js",
+  "chunk-GFPDYAS4.js": "chunk-GFPDYAS4.js",
+  "chunk-GLT366G4.js": "chunk-GLT366G4.js",
+  "chunk-IDMPUYAI.js": "chunk-IDMPUYAI.js",
+  "chunk-IKDGDR6G.js": "chunk-IKDGDR6G.js",
+  "chunk-INVQXF5J.js": "chunk-INVQXF5J.js",
+  "chunk-JDV45OL3.js": "chunk-JDV45OL3.js",
+  "chunk-JIGWROK6.js": "chunk-JIGWROK6.js",
+  "chunk-K6EN3XAA.js": "chunk-K6EN3XAA.js",
+  "chunk-L4CLMAFJ.js": "chunk-L4CLMAFJ.js",
+  "chunk-LSWT43E5.js": "chunk-LSWT43E5.js",
+  "chunk-LTEWF33W.js": "chunk-LTEWF33W.js",
+  "chunk-NIIYE3MU.js": "chunk-NIIYE3MU.js",
+  "chunk-NPSC7M4P.js": "chunk-NPSC7M4P.js",
+  "chunk-NXW5L5BB.js": "chunk-NXW5L5BB.js",
+  "chunk-OZ5DTEMO.js": "chunk-OZ5DTEMO.js",
+  "chunk-PEDYK2PS.js": "chunk-PEDYK2PS.js",
+  "chunk-PZSAH6BK.js": "chunk-PZSAH6BK.js",
+  "chunk-QT5YN6FI.js": "chunk-QT5YN6FI.js",
+  "chunk-RSGFXRWW.js": "chunk-RSGFXRWW.js",
+  "chunk-TL3ZUX3E.js": "chunk-TL3ZUX3E.js",
+  "chunk-TPG5SRMF.js": "chunk-TPG5SRMF.js",
   "chunk-TWZW5B45.js": "chunk-TWZW5B45.js",
-  "chunk-UWIWA7XS.js": "chunk-UWIWA7XS.js",
-  "chunk-VOOBGVNS.js": "chunk-VOOBGVNS.js",
-  "chunk-VSJMGQ2V.js": "chunk-VSJMGQ2V.js",
-  "chunk-VYPIY7JV.js": "chunk-VYPIY7JV.js",
-  "chunk-WBLS7YEH.js": "chunk-WBLS7YEH.js",
-  "chunk-ZCOXDGSQ.js": "chunk-ZCOXDGSQ.js",
-  "chunk-ZFW27YHH.js": "chunk-ZFW27YHH.js",
-  "chunk-ZL64J2BE.js": "chunk-ZL64J2BE.js",
+  "chunk-V364ZG7K.js": "chunk-V364ZG7K.js",
+  "chunk-XEZ65W3E.js": "chunk-XEZ65W3E.js",
+  "chunk-XO34M3NI.js": "chunk-XO34M3NI.js",
+  "chunk-ZXA4WHSN.js": "chunk-ZXA4WHSN.js",
   "data/016/data.json": "data/016/data.json",
   "data/016/defaults.json": "data/016/defaults.json",
   "data/016/hash.json": "data/016/hash.json",
@@ -291,7 +292,7 @@ const FactoriolabExactMap = {
   "favicon.ico": "favicon.ico",
   "icons.webp": "icons.webp",
   "index.html": "index.html",
-  "main-PKKSFGC7.js": "main-PKKSFGC7.js",
+  "main-47OTRW7A.js": "main-47OTRW7A.js",
   "media/color-727V6BA6.png": "media/color-727V6BA6.png",
   "media/fa-brands-400-CNBICIQT.ttf": "media/fa-brands-400-CNBICIQT.ttf",
   "media/fa-brands-400-MDS4TU4L.woff2": "media/fa-brands-400-MDS4TU4L.woff2",
@@ -341,6 +342,9 @@ const FactoriolabBasenameMap = {
   "en.json": [
     "assets/i18n/en.json"
   ],
+  "es.json": [
+    "assets/i18n/es.json"
+  ],
   "fr.json": [
     "assets/i18n/fr.json",
     "data/sfy/i18n/fr.json"
@@ -373,143 +377,143 @@ const FactoriolabBasenameMap = {
   "browserconfig.xml": [
     "browserconfig.xml"
   ],
-  "chunk-2AVW7DB3.js": [
-    "chunk-2AVW7DB3.js"
+  "chunk-2TEAITZV.js": [
+    "chunk-2TEAITZV.js"
   ],
-  "chunk-2BWTQID7.js": [
-    "chunk-2BWTQID7.js"
+  "chunk-3KP23RO2.js": [
+    "chunk-3KP23RO2.js"
   ],
-  "chunk-2CHC5TDY.js": [
-    "chunk-2CHC5TDY.js"
+  "chunk-3RG4TA4A.js": [
+    "chunk-3RG4TA4A.js"
   ],
-  "chunk-3ZUIUQLF.js": [
-    "chunk-3ZUIUQLF.js"
+  "chunk-566TU5EW.js": [
+    "chunk-566TU5EW.js"
   ],
-  "chunk-4PD5MZCY.js": [
-    "chunk-4PD5MZCY.js"
+  "chunk-56AGMPL6.js": [
+    "chunk-56AGMPL6.js"
   ],
-  "chunk-4U2WODWG.js": [
-    "chunk-4U2WODWG.js"
+  "chunk-5HUK2CK4.js": [
+    "chunk-5HUK2CK4.js"
   ],
-  "chunk-5UPUBLOK.js": [
-    "chunk-5UPUBLOK.js"
+  "chunk-6AA6F6KU.js": [
+    "chunk-6AA6F6KU.js"
   ],
-  "chunk-6AWNVDLB.js": [
-    "chunk-6AWNVDLB.js"
+  "chunk-6BGK3QDP.js": [
+    "chunk-6BGK3QDP.js"
   ],
-  "chunk-7JNB2KK6.js": [
-    "chunk-7JNB2KK6.js"
+  "chunk-6E6NVBAQ.js": [
+    "chunk-6E6NVBAQ.js"
   ],
-  "chunk-A2K4VUSU.js": [
-    "chunk-A2K4VUSU.js"
+  "chunk-7BJO47CB.js": [
+    "chunk-7BJO47CB.js"
   ],
-  "chunk-DIOVXBYG.js": [
-    "chunk-DIOVXBYG.js"
+  "chunk-ABPFJOIE.js": [
+    "chunk-ABPFJOIE.js"
   ],
-  "chunk-EJZC5EDN.js": [
-    "chunk-EJZC5EDN.js"
+  "chunk-B5MNMUXE.js": [
+    "chunk-B5MNMUXE.js"
   ],
-  "chunk-FJS5QXPZ.js": [
-    "chunk-FJS5QXPZ.js"
+  "chunk-BZRSHDAE.js": [
+    "chunk-BZRSHDAE.js"
   ],
-  "chunk-G25KGWRW.js": [
-    "chunk-G25KGWRW.js"
+  "chunk-CAIGWISA.js": [
+    "chunk-CAIGWISA.js"
   ],
-  "chunk-G6DUOGHR.js": [
-    "chunk-G6DUOGHR.js"
+  "chunk-EDTYS66H.js": [
+    "chunk-EDTYS66H.js"
   ],
-  "chunk-GQJRDAXM.js": [
-    "chunk-GQJRDAXM.js"
+  "chunk-EGRKDG7D.js": [
+    "chunk-EGRKDG7D.js"
   ],
-  "chunk-HCAWMO73.js": [
-    "chunk-HCAWMO73.js"
+  "chunk-FDK7VW5G.js": [
+    "chunk-FDK7VW5G.js"
   ],
-  "chunk-I7XPYAIR.js": [
-    "chunk-I7XPYAIR.js"
+  "chunk-FJ7LSHCI.js": [
+    "chunk-FJ7LSHCI.js"
   ],
-  "chunk-IHEJGUMY.js": [
-    "chunk-IHEJGUMY.js"
+  "chunk-FWXHGAVU.js": [
+    "chunk-FWXHGAVU.js"
   ],
-  "chunk-IJKAZFOW.js": [
-    "chunk-IJKAZFOW.js"
+  "chunk-GAFADBS6.js": [
+    "chunk-GAFADBS6.js"
   ],
-  "chunk-JATLREWG.js": [
-    "chunk-JATLREWG.js"
+  "chunk-GFPDYAS4.js": [
+    "chunk-GFPDYAS4.js"
   ],
-  "chunk-JTSDALRM.js": [
-    "chunk-JTSDALRM.js"
+  "chunk-GLT366G4.js": [
+    "chunk-GLT366G4.js"
   ],
-  "chunk-KEJTOO3O.js": [
-    "chunk-KEJTOO3O.js"
+  "chunk-IDMPUYAI.js": [
+    "chunk-IDMPUYAI.js"
   ],
-  "chunk-LVF3FVUV.js": [
-    "chunk-LVF3FVUV.js"
+  "chunk-IKDGDR6G.js": [
+    "chunk-IKDGDR6G.js"
   ],
-  "chunk-N6SCJFZW.js": [
-    "chunk-N6SCJFZW.js"
+  "chunk-INVQXF5J.js": [
+    "chunk-INVQXF5J.js"
   ],
-  "chunk-NBPUI3EW.js": [
-    "chunk-NBPUI3EW.js"
+  "chunk-JDV45OL3.js": [
+    "chunk-JDV45OL3.js"
   ],
-  "chunk-O4Z62S43.js": [
-    "chunk-O4Z62S43.js"
+  "chunk-JIGWROK6.js": [
+    "chunk-JIGWROK6.js"
   ],
-  "chunk-P2ZPFYZT.js": [
-    "chunk-P2ZPFYZT.js"
+  "chunk-K6EN3XAA.js": [
+    "chunk-K6EN3XAA.js"
   ],
-  "chunk-P5QM2LGB.js": [
-    "chunk-P5QM2LGB.js"
+  "chunk-L4CLMAFJ.js": [
+    "chunk-L4CLMAFJ.js"
   ],
-  "chunk-PPPK4UZV.js": [
-    "chunk-PPPK4UZV.js"
+  "chunk-LSWT43E5.js": [
+    "chunk-LSWT43E5.js"
   ],
-  "chunk-QIN73SLB.js": [
-    "chunk-QIN73SLB.js"
+  "chunk-LTEWF33W.js": [
+    "chunk-LTEWF33W.js"
   ],
-  "chunk-RFSNV6CF.js": [
-    "chunk-RFSNV6CF.js"
+  "chunk-NIIYE3MU.js": [
+    "chunk-NIIYE3MU.js"
   ],
-  "chunk-SE62O2O6.js": [
-    "chunk-SE62O2O6.js"
+  "chunk-NPSC7M4P.js": [
+    "chunk-NPSC7M4P.js"
   ],
-  "chunk-SG2AWOYC.js": [
-    "chunk-SG2AWOYC.js"
+  "chunk-NXW5L5BB.js": [
+    "chunk-NXW5L5BB.js"
   ],
-  "chunk-SKJBBAJH.js": [
-    "chunk-SKJBBAJH.js"
+  "chunk-OZ5DTEMO.js": [
+    "chunk-OZ5DTEMO.js"
   ],
-  "chunk-SSL7IGZO.js": [
-    "chunk-SSL7IGZO.js"
+  "chunk-PEDYK2PS.js": [
+    "chunk-PEDYK2PS.js"
   ],
-  "chunk-TSCDR4AP.js": [
-    "chunk-TSCDR4AP.js"
+  "chunk-PZSAH6BK.js": [
+    "chunk-PZSAH6BK.js"
+  ],
+  "chunk-QT5YN6FI.js": [
+    "chunk-QT5YN6FI.js"
+  ],
+  "chunk-RSGFXRWW.js": [
+    "chunk-RSGFXRWW.js"
+  ],
+  "chunk-TL3ZUX3E.js": [
+    "chunk-TL3ZUX3E.js"
+  ],
+  "chunk-TPG5SRMF.js": [
+    "chunk-TPG5SRMF.js"
   ],
   "chunk-TWZW5B45.js": [
     "chunk-TWZW5B45.js"
   ],
-  "chunk-UWIWA7XS.js": [
-    "chunk-UWIWA7XS.js"
+  "chunk-V364ZG7K.js": [
+    "chunk-V364ZG7K.js"
   ],
-  "chunk-VOOBGVNS.js": [
-    "chunk-VOOBGVNS.js"
+  "chunk-XEZ65W3E.js": [
+    "chunk-XEZ65W3E.js"
   ],
-  "chunk-VSJMGQ2V.js": [
-    "chunk-VSJMGQ2V.js"
+  "chunk-XO34M3NI.js": [
+    "chunk-XO34M3NI.js"
   ],
-  "chunk-VYPIY7JV.js": [
-    "chunk-VYPIY7JV.js"
-  ],
-  "chunk-WBLS7YEH.js": [
-    "chunk-WBLS7YEH.js"
-  ],
-  "chunk-ZCOXDGSQ.js": [
-    "chunk-ZCOXDGSQ.js"
-  ],
-  "chunk-ZFW27YHH.js": [
-    "chunk-ZFW27YHH.js"
-  ],
-  "chunk-ZL64J2BE.js": [
-    "chunk-ZL64J2BE.js"
+  "chunk-ZXA4WHSN.js": [
+    "chunk-ZXA4WHSN.js"
   ],
   "data.json": [
     "data/016/data.json",
@@ -755,8 +759,8 @@ const FactoriolabBasenameMap = {
   "index.html": [
     "index.html"
   ],
-  "main-PKKSFGC7.js": [
-    "main-PKKSFGC7.js"
+  "main-47OTRW7A.js": [
+    "main-47OTRW7A.js"
   ],
   "color-727V6BA6.png": [
     "media/color-727V6BA6.png"
