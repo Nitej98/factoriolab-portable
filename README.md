@@ -43,8 +43,7 @@
 
 
 
-### Submit bugs and suggestions on the [Issues page](https://github.com/Nitej98/factoriolab-portable/issues) or in our [Discord](https://discord.gg/mn2yYtGR4z)
-### If you like this app, consider supporting on [Ko-fi](https://ko-fi.com/nitej)
+### Submit bugs and suggestions on the [Issues page](https://github.com/Nitej98/factoriolab-portable/issues)
 
 #  Running Locally (Development)
   

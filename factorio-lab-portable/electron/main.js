@@ -48,7 +48,7 @@ function createWindow() {
       __dirname,
       "../build/assets",
       "title_bar_icons",
-      "title_bar_icon.png"
+      "title_bar_icon.png",
     ),
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
@@ -113,9 +113,9 @@ function createWindow() {
           shell.openExternal(
             {
               "github.com": "https://github.com/Nitej98/factoriolab-portable",
-              "discord.gg": "https://discord.gg/mn2yYtGR4z",
-              "ko-fi.com": "https://ko-fi.com/nitej",
-            }[url.hostname]
+              "discord.gg": "https://github.com/Nitej98/factoriolab-portable",
+              "ko-fi.com": "https://github.com/Nitej98/factoriolab-portable",
+            }[url.hostname],
           );
         } catch (e) {
           console.log(e);
