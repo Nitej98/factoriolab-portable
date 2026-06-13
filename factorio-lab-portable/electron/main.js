@@ -109,12 +109,11 @@ function createWindow() {
           mainWindow.webContents.send("add-new-tab", url.href);
           return { action: "deny" };
         }
+        console.log(url.hostname);
         try {
           shell.openExternal(
             {
               "github.com": "https://github.com/Nitej98/factoriolab-portable",
-              "discord.gg": "https://github.com/Nitej98/factoriolab-portable",
-              "ko-fi.com": "https://github.com/Nitej98/factoriolab-portable",
             }[url.hostname],
           );
         } catch (e) {

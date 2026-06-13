@@ -19,11 +19,18 @@ try {
   folderlist.forEach(function (folderName, index, array) {
     const folderdata = {};
 
-    const jsonData = require(`${__dirname}/../public/factoriolab/browser/data/${folderName}/data.json`);
-    const jsonHash = require(`${__dirname}/../public/factoriolab/browser/data/${folderName}/hash.json`);
+    const jsonData = require(
+      `${__dirname}/../public/factoriolab/browser/data/${folderName}/data.json`,
+    );
+    const jsonHash = require(
+      `${__dirname}/../public/factoriolab/browser/data/${folderName}/hash.json`,
+    );
 
+    // jsonData.icons.forEach(function (itemData, index, array) {
+    //   folderdata[itemData.id] = itemData.position;
+    // });
     jsonData.icons.forEach(function (itemData, index, array) {
-      folderdata[itemData.id] = itemData.position;
+      folderdata[itemData.id] = `-${itemData.x}px -${itemData.y}px`;
     });
     // jsonHash.forEach(function (itemData, index, array) {});
     const folderHash = jsonHash.items;

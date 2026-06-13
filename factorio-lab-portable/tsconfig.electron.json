@@ -12,7 +12,10 @@
     "noEmitOnError": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "types": ["node", "electron"]
+    "types": ["node", "electron"],
+
+    "sourceMap": true,
+    "inlineSources": true
   },
   "include": ["electron/**/*"],
   "exclude": ["node_modules", "build", "dist", "src"]

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Electron",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/factorio-lab-portable/node_modules/.bin/electron.cmd",
+      "args": ["."],
+      "cwd": "${workspaceFolder}/factorio-lab-portable",
+      "sourceMaps": true,
+      "outFiles": [
+        "${workspaceFolder}/factorio-lab-portable/electron-build/**/*.js"
+      ],
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

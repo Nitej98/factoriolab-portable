@@ -17,24 +17,58 @@ const Icon: React.FC<IconProps> = ({
 }) => {
   const width = 64;
   const height = 64;
-  const qualitySpritePath = "./factoriolab/browser/icons.webp";
 
   if (!position) {
     position = "-192px 0px";
     quality = "0";
     spritePath = "./factoriolab/browser/icons.webp";
   }
-  let spriteLocationMap = new Map<string, string>([
-    ["default", "-192px 0px"],
-    ["0", "-256px -256px"],
-    ["5", "-256px -192px"],
-    ["3", "-192px -192px"],
-    ["2", "-128px -192px"],
-    ["1", "-64px -192px"],
-    ["-1", "-0px -192px"],
+
+  // Sprite sheet + position for each quality level
+  const qualitySpriteMap = new Map<string, { path: string; position: string }>([
+    [
+      "0",
+      { path: "./factoriolab/browser/icon/icons.webp", position: "-66px 0px" },
+    ],
+    [
+      "-1",
+      {
+        path: "./factoriolab/browser/data/spa/icons.webp",
+        position: "0px 0px",
+      },
+    ],
+    [
+      "1",
+      {
+        path: "./factoriolab/browser/data/spa/icons.webp",
+        position: "-66px 0px",
+      },
+    ],
+    [
+      "2",
+      {
+        path: "./factoriolab/browser/data/spa/icons.webp",
+        position: "0px -66px",
+      },
+    ],
+    [
+      "3",
+      {
+        path: "./factoriolab/browser/data/spa/icons.webp",
+        position: "-66px -66px",
+      },
+    ],
+    [
+      "5",
+      {
+        path: "./factoriolab/browser/data/spa/icons.webp",
+        position: "-132px 0px",
+      },
+    ],
   ]);
 
-  const qualitySpriteLocation = spriteLocationMap.get(quality);
+  const qualitySprite =
+    qualitySpriteMap.get(quality) ?? qualitySpriteMap.get("0")!;
 
   const mainSpriteStyle: CSSProperties = {
     backgroundImage: `url(${spritePath})`,
@@ -53,11 +87,20 @@ const Icon: React.FC<IconProps> = ({
   };
 
   const qualityOverlayStyle: CSSProperties = {
-    ...mainSpriteStyle,
-    backgroundImage: `url(${qualitySpritePath})`,
-    backgroundPosition: qualitySpriteLocation ?? spriteLocationMap.get("0"),
+    backgroundImage: `url(${qualitySprite.path})`,
+    backgroundPosition: qualitySprite.position,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "auto",
+    width: `${width}px`,
+    height: `${height}px`,
+    position: "absolute",
+    top: 0,
+    left: 0,
+    transformOrigin: "top left",
+    transform: `translate(${-16 * scale}px, ${16 * scale}px) scale(${scale})`,
     zIndex: 1,
   };
+
   const wrapperStyle: CSSProperties = {
     width: `${width * scale}px`,
     height: `${height * scale}px`,
@@ -68,7 +111,7 @@ const Icon: React.FC<IconProps> = ({
   return (
     <div style={wrapperStyle} className={className}>
       <div style={mainSpriteStyle} />
-      {qualitySpritePath && <div style={qualityOverlayStyle} />}
+      <div style={qualityOverlayStyle} />
     </div>
   );
 };

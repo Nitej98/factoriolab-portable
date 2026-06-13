@@ -38,7 +38,7 @@ function getBase64Code(charCode) {
 function base64ToBytes(str) {
   if (str.length % 4 !== 0) {
     throw new Error(
-      "Unable to parse base64 string: Length is not multiple of 4."
+      "Unable to parse base64 string: Length is not multiple of 4.",
     );
   }
 
@@ -50,8 +50,8 @@ function base64ToBytes(str) {
   const missingOctets = str.endsWith(CUSTOM_ZERO_CHAR + CUSTOM_ZERO_CHAR)
     ? 2
     : str.endsWith(CUSTOM_ZERO_CHAR)
-    ? 1
-    : 0;
+      ? 1
+      : 0;
 
   const n = str.length;
   const result = new Uint8Array(3 * (n / 4));
@@ -107,6 +107,58 @@ function processItemName(itemName) {
   }
 }
 
+const GAME_ICON_POSITION_MAP = {
+  coi: "0px -66px",
+  dsp: "-66px -66px",
+  fay: "-132px -66px",
+  ffy: "-264px -66px",
+  fdy: "0px -132px",
+  mds: "-66px -132px",
+  ows: "-132px -132px",
+  sfy: "-198px -132px",
+  tta: "-264px -132px",
+  sky: "0px -198px",
+  cst: "-66px -198px",
+  mtm: "-198px -198px",
+  str: "-264px -198px",
+};
+
+const GAME_NAME_MAP = {
+  coi: "Captain of Industry",
+  dsp: "Dyson Sphere Program",
+  fay: "Factor Y",
+  ffy: "Final Factory",
+  fdy: "Foundry",
+  mds: "Mindustry",
+  ows: "Outworld Station",
+  sfy: "Satisfactory",
+  tta: "Techtonica",
+  sky: "SkyFormer",
+  cst: "Custom",
+  mtm: "MoteMancer",
+  str: "StarRupture",
+};
+
+const DEFAULT_GAME_ICON_POSITION = "-198px -66px";
+const GAME_ICONS_SPRITE_PATH = "./factoriolab/browser/icons/icons.webp";
+
+function getGameIconDetails(folderName, urlHash) {
+  const spritePosition =
+    GAME_ICON_POSITION_MAP[folderName] ?? DEFAULT_GAME_ICON_POSITION;
+
+  const gameName = GAME_NAME_MAP[folderName] ?? "Factorio";
+
+  return {
+    itemName: gameName
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase()),
+    spritePosition: spritePosition,
+    itemQuality: "0",
+    spritePath: GAME_ICONS_SPRITE_PATH,
+    urlHash: urlHash,
+  };
+}
+
 async function getSpriteDetails(fullUrl) {
   const urlObj = new URL(fullUrl);
   const urlHash = urlObj.hash;
@@ -137,7 +189,7 @@ async function getSpriteDetails(fullUrl) {
 
   // defaulting the foldername to spa
   if (folderName === null) {
-    folderName = "spm";
+    folderName = "spa";
   }
 
   let fullItemName;
@@ -155,7 +207,7 @@ async function getSpriteDetails(fullUrl) {
         fullItemName = hashObject.items[numericValue];
       }
     } else {
-      return;
+      return getGameIconDetails(folderName, urlHash);
     }
     const matchResult = fullItemName.split("*")[0].match(/(.*)(\(\d+\))/);
     if (matchResult) {
